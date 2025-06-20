@@ -60,29 +60,28 @@ There are multiple ways to convert quaternion orientation into 2D screen movemen
 
 
 
+
 Consider Two approaches in code implementations( union_pygame.py and clear_vizual.py)
 
 
 1. Relative Movement (Delta Quaternion – Pygame)
-Files: QuaternionTo2DMotion, MotionVisualizer
 
-Tracks change in orientation over time.
+   Tracks change in orientation over time.
 
-Movement behaves like a virtual mouse or pointer.
+   Movement behaves like a virtual mouse or pointer.
 
-Uses pygame to simulate screen and cursor.
+   Uses pygame to simulate screen and cursor.
 
-Includes smoothing and deadzone to reduce jitter.
+   Includes smoothing and deadzone to reduce jitter.
 
-Great for interactive apps, games, or gesture control.
+   Great for interactive apps, games, or gesture control.
 
 2. Absolute Orientation (Euler Angle Mapping – Matplotlib)
-File: QuaternionToScreen
 
-Converts quaternion to absolute tilt-based position.
+   Converts quaternion to absolute tilt-based position.
 
-Maps roll/pitch directly to X/Y screen coordinates.
+   Maps roll/pitch directly to X/Y screen coordinates.
 
-Uses matplotlib to visualize motion + trail.
+   Uses matplotlib to visualize motion + trail.
 
-Simple and ideal for data visualization or orientation demos.
+   Simple and ideal for data visualization or orientation demos.
